@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "node src/benchmark.js",
-    "start": "nodemon src/server.js",
+    "start": "node src/server.js",
     "build": "babel src -d build",
     "pm2-fork": "pm2 start src/server.js",
     "start-cluster": "nodemon src/server.js -m CLUSTER"
