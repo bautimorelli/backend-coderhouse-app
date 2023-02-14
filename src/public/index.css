@@ -1,0 +1,49 @@
+.thumbnail {
+    max-height: 40px;
+}
+.formContainer {
+    max-width: 700px;
+}
+
+.chatRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.chatUsername {
+    font-weight: bold;
+    color: blue;
+}
+
+.chatText {
+    font-style: italic;
+    color: green;
+}
+
+.chatDate {
+    color: burlywood;
+}
+
+#chatForm {
+    margin-top: 15px;
+}
+
+.contentContainer {
+    background-color: #d3d3d36b;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greetingText {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin: 0px 24px;
+}

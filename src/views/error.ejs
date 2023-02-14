@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %> 
+<body>
+    <div class="contentContainer m-4">
+        <p class="h1 m-4"><%= message %></p>
+        <button class="btn btn-primary m-4" onclick="location.href='/login'">Volver a Login</button>
+    </div>
+    <%- include("./partials/scripts.ejs") %>
+</body>
+</html>

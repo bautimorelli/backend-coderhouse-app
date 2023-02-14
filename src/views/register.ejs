@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %> 
+<body>
+    <div class="contentContainer m-4">
+        <p class="h1 m-4">Registro de Usuario</p>
+        <div class="formContainer">
+            <form action="/register" method="post" class="form m-4" id="registerForm">
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Ingrese su nombre:</label>
+                    <input type="text" name="name" class="form-control" id="inputName">
+                    <label for="inputEmail" class="form-label">Ingrese su email:</label>
+                    <input type="email" name="email" class="form-control" id="inputEmail">
+                    <label for="inputPassword" class="form-label">Ingrese contrasena:</label>
+                    <input type="password" name="password" class="form-control" id="inputPassword">
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarme</button>
+            </form>
+        </div>
+        <button class="btn btn-primary m-4" onclick="location.href='/login'">Ir a Login</button>
+    </div>
+    <%- include("./partials/scripts.ejs") %>
+</body>
+</html>

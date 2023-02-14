@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %> 
+<body>
+    <div class="contentContainer m-4 bg-primary">
+        <p class="h1 m-4 text-light"> Hasta Luego <%= user.name %> </p>
+    </div>
+    <%- include("./partials/scripts.ejs") %>
+    <script>
+        setTimeout(() => {
+            location.href="/login"
+        }, 5000)
+    </script>
+</body>

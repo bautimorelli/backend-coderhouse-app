@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %> 
+<body>
+    <%- include("./partials/greeting.ejs") %>
+    <%- include("./partials/productForm.ejs") %>
+    <div class="m-4 contentContainer">
+        <p class="h1 m-4">Vista de Productos</p>
+        <%- include("./partials/emptyAlert.ejs") %>
+        <%- include("./partials/productTable.ejs") %> 
+    </div>
+    <%- include("./partials/chat.ejs") %> 
+    <%- include("./partials/scripts.ejs") %>
+    <script src="index.js"></script>
+</body>
+</html>
