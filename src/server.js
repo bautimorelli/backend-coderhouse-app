@@ -28,7 +28,7 @@ const argOptions = {
 	default: { modo: "FORK", port: "8080" },
 }
 const argumentos = ParsedArgs(process.argv.slice(2), argOptions)
-const PORT = argumentos.port
+const PORT = process.env.PORT || argumentos.port
 const MODO = argumentos.modo
 
 //Express server
